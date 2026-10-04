@@ -140,11 +140,11 @@ def load_data():
 def load_model():
 
     model = joblib.load(
-        "aircraft_fuel_random_forest.pkl"
+        "aircraft_fuel_random_forest_compressed.pkl"
     )
 
     preprocessor = joblib.load(
-        "aircraft_fuel_preprocessor.pkl"
+        "aircraft_fuel_preprocessor_compressed.pkl"
     )
 
     return model, preprocessor
